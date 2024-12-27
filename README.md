@@ -8,7 +8,7 @@
 1. Since the codespace is in-browser, it is essentially "multi-device" meaning I can work form any any device and not have authentication conflicts, etc.
 
 
-Both the Meta&trade; and IBM&trade; back-end development certificates have a capstone project 
+Both the Meta&trade; and IBM&trade; back-end development certificates have a capstone project.
 
 In the IBM&trade; certificate path, your app with have this architecture:
 ![IBM website build](backend_capstone_architecture.png)
