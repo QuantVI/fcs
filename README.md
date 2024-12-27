@@ -8,3 +8,4 @@
 1. Since the codespace is in-browser, it is essentially "multi-device" meaning I can work form any any device and not have authentication conflicts, etc
 
 
+Both the Meta&trade; and IBM&trade; back-end development certificates have a capstone project where your app with have this architecture
