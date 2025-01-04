@@ -16,6 +16,7 @@ In the IBM&trade; certificate path, your app with have this architecture:
 ----
 
 ## Installation Notes
+- For reference: IBM Capstone - Module 1 - Intro fo Flask
 - `python3 -m venv SomeEnvironmentName`
   - a folder in the current directory bearing the env name is made
     - it contains _bin, include, lib, lib64, pyvenv.cfg_
