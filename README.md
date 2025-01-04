@@ -8,3 +8,17 @@
 1. Since the codespace is in-browser, it is essentially "multi-device" meaning I can work form any any device and not have authentication conflicts, etc
 
 
+## Installation Notes
+- `python3 -m venv SomeEnvironmentName`
+  - a folder in the current directory bearing the env name is made
+    - it contains _bin, include, lib, lib64, pyvenv.cfg_
+  - you can acivate this and install Flask or Django in the activated env
+    - `source SomeEnvironmentName/bin/activate`
+        - `pip freeze` on this will show nothing. You have no non-standard, "external" modules installed
+    - `pip install Flask` or `pip install Flas==2.2.2` for example when a specific version is needed.
+        - Might need to use `pip3`
+        - `pip freeze` can show for example
+            + asgiref==3.8.1  
+            Django==5.1.4  
+            sqlparse==0.5.3
+        
