@@ -74,6 +74,19 @@ In the IBM&trade; certificate path, your app with have this architecture:
   - `env_lemon` virtual env folder from `venv` command
   - `littlelemon` django project folder from `startproject` command
     - `cd` into this folder to run `python manage.py runserver`  
-    This boots/launches the website, view in-browser at localhost : 8000
+    This boots/launches the website, view in-browser at localhost : 8000  
+    Quit with CTRl+C.
+- Your (new) django **project** needs its first **app*
+  - `python manage.py startapp reservation`  
+  Where *startapp* really means "create", will create a reservation app  
+  in your littlelemon project. This *app* must be added to `settings.py`
+  - Notice that since this command uses `manage,py` it is in the **outer**  
+  **PROJECT** folder, not the inner folder of the same name
+  - proj_lemon $\leftarrow$ directory from `mkdir` to hold env and django full-design
+    - littlelemon $\leftarrow$ Project Folder (from `startproject`)
+      - littlelemon $\leftarrow$ *inner* folder auto-created with the same name
+      - manage.py
+      - db.sqlite3
+    - env_lemon $\leftarrow$ the virtual_env that Django Python module is installed in
 
 
