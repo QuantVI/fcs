@@ -59,7 +59,8 @@ In the IBM&trade; certificate path, your app with have this architecture:
 - after activating `anEnv` you run pip
 - `pip install django` : wil put Djano 5.1.4 (or latest) into your lib64/python3.12/site-packages folder
   - asfiref 3.8.1 and sqlparse 0.5.3 are also installed
-  - The show up with `Django==5.1.4` when you run `pip freeze`
+  - They show up with `Django==5.1.4` when you run `pip freeze`
+  - You can also use django.__version__ inside python repl to see django version
 - with anEnv still activated
   - `django-admin` command can be called from anywhere, even the root "fcs" folder
   - `django-admin startproject littlelemon`
