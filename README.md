@@ -68,3 +68,12 @@ In the IBM&trade; certificate path, your app with have this architecture:
   otherwise `anEnv` and `littlelemon` are in the `fcs` parent folder,  
   but we do not know that `anEnv` was the virtual environment specifically  
   made for the `littlelemon` Django project.
+
+#### Example
+- `proj_lemon` folder
+  - `env_lemon` virtual env folder from `venv` command
+  - `littlelemon` django project folder from `startproject` command
+    - `cd` into this folder to run `python manage.py runserver`  
+    This boots/launches the website, view in-browser at localhost : 8000
+
+
