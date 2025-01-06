@@ -94,8 +94,13 @@ In the IBM&trade; certificate path, your app with have this architecture:
   See the structure below
     - proj_lemon
       - littlelemon
-        - littlelemon
+        - littlelemon $\leftarrow$ `settings.py` is in here.
         - `manage.py`
         - db.sqlite3
       - env_lemon
       - **reservation** $\leftarrow$ created when `startapp` is called
+  - After you've added an _app_ through **`startapp`**, you must add this app by name  
+  to the `INSTALLED_APPS` list, in the `settings.py` file, within the *inner* folder
+
+## Resume From
+- Meta Back-End Developer Capstone > Module 1 > Reading: Exercise: Setting up the Django project
