@@ -23,7 +23,7 @@ In the IBM&trade; certificate path, your app with have this architecture:
   - you can acivate this and install Flask or Django in the activated env
     - `source SomeEnvironmentName/bin/activate`
         - `pip freeze` on this will show nothing. You have no non-standard, "external" modules installed
-    - `pip install Flask` or `pip install Flas==2.2.2` for example when a specific version is needed.
+    - `pip install Flask` or `pip install Flask==2.2.2` for example when a specific version is needed.
         - Might need to use `pip3`
         - `pip freeze` can show for example
             + asgiref==3.8.1  
@@ -39,8 +39,8 @@ In the IBM&trade; certificate path, your app with have this architecture:
 1. Install Django with pip
     - The command line utility `django-admin` will be available in the scripts directory.
 1. Add an "app" to Django (aka Create a Django project)
-    - `django-admin startproject littlelemon`  
-    Note that _littlelemon_ is the intended name for a NEW projec that doesn't  
+    - `django-admin startproject bigorange`  
+    Note that _little lemon_ is the intended name for a NEW project that doesn't  
     exist yet. Also, the name doesn't need to be the same as the virtual environment.  
     This sort of "name overloading" is annoying and confusing.  
     Furthermore __startproject__ really means _create a new project and folders with this name..._.
@@ -52,3 +52,19 @@ In the IBM&trade; certificate path, your app with have this architecture:
     - Thus `startapp` really means "__create__ a new app"
     - `python3 manage.py startapp reservation`
     - Be sure to add this app to the `settings.py` file in the `installed_apps` list
+
+### Folder Structure
+- anEnv : folder made by using this name for virtual env : `python -m venv anEnv`
+  - bin, include, lib, lib64, pyenv.cfg : folders and config file inside __anEnv__ when it's created
+- after activating `anEnv` you run pip
+- `pip install django` : wil put Djano 5.1.4 (or latest) into your lib64/python3.12/site-packages folder
+  - asfiref 3.8.1 and sqlparse 0.5.3 are also installed
+  - The show up with `Django==5.1.4` when you run `pip freeze`
+- with anEnv still activated
+  - `django-admin` command can be called from anywhere, even the root "fcs" folder
+  - `django-admin startproject littlelemon`
+  - if called in `workspaces/fcs` then a folder is made there.
+  - This is why it's good to create a **"Project Folder"** beuuase  
+  otherwise `anEnv` and `littlelemon` are in the `fcs` parent folder,  
+  but we do not know that `anEnv` was the virtual environment specifically  
+  made for the `littlelemon` Django project.
