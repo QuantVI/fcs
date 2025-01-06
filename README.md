@@ -80,7 +80,7 @@ In the IBM&trade; certificate path, your app with have this architecture:
   - `python manage.py startapp reservation`  
   Where *startapp* really means "create", will create a reservation app  
   in your littlelemon project. This *app* must be added to `settings.py`
-  - Notice that since this command uses `manage,py` it is in the **outer**  
+  - Notice that since this command uses `manage.py` it is in the **outer**  
   **PROJECT** folder, not the inner folder of the same name
   - proj_lemon $\leftarrow$ directory from `mkdir` to hold env and django full-design
     - littlelemon $\leftarrow$ Project Folder (from `startproject`)
@@ -88,5 +88,13 @@ In the IBM&trade; certificate path, your app with have this architecture:
       - manage.py
       - db.sqlite3
     - env_lemon $\leftarrow$ the virtual_env that Django Python module is installed in
-
-
+  - After you run `startapp` to create a new "app", you will notice it creates  
+  a folder, e.g. _reservation_ in the same level as the **inner** folder.  
+  See the structure below
+    - proj_lemon
+      - littlelemon
+        - littlelemon
+        - `manage.py`
+        - db.sqlite3
+      - env_lemon
+      - **reservation** $\leftarrow$ created when `startapp` is called
