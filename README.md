@@ -87,7 +87,7 @@ In the IBM&trade; certificate path, your app with have this architecture:
       - littlelemon $\leftarrow$ *inner* folder auto-created with the same name
       - manage.py
       - db.sqlite3
-    - env_lemon $\leftarrow$ the virtual_env that Django Python module is installed in
+    - env_lemon $\leftarrow$ the virtual_env where Django Python module is installed
   - After you run `startapp` to create a new "app", you will notice it creates  
   a folder, e.g. _reservation_ in the same level as the **inner** folder.  
   See the structure below
