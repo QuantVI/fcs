@@ -103,4 +103,5 @@ In the IBM&trade; certificate path, your app with have this architecture:
   to the `INSTALLED_APPS` list, in the `settings.py` file, within the *inner* folder
 
 ## Resume From
-- Meta Back-End Developer Capstone > Module 1 > Reading: Exercise: Setting up the Django project
+- Meta Back-End Developer Capstone > Module 1 > Reading: Exercise: Setting up the Django 
+- dj sup uzr : codespace | wordpassing
