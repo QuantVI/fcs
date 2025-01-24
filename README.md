@@ -101,7 +101,20 @@ In the IBM&trade; certificate path, your app with have this architecture:
       - **reservation** $\leftarrow$ created when `startapp` is called
   - After you've added an _app_ through **`startapp`**, you must add this app by name  
   to the `INSTALLED_APPS` list, in the `settings.py` file, within the *inner* folder
+    - e.g. `proj_lemon / littlelemon / littlelemon / settings.py`
 
 ## Resume From
 - Meta Back-End Developer Capstone > Module 1 > Reading: Exercise: Setting up the Django 
 - dj sup uzr : codespace | wordpassing
+
+
+```
+(workspace) C:\workspace>django-admin startproject demoproject . 
+(workspace) C:\workspace>cd demoproject 
+(workspace) C:\workspace>django-admin startapp demoapp 
+(workspace) C:\workspace>cd.. 
+(workspace) C:\workspace>python manage.py migrate 
+(workspace) C:\workspace>python manage.py createsuperuser 
+(workspace) C:\workspace>python manage.py runserver 
+```
+
