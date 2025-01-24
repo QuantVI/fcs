@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # app I made
     'reservation',
+    # app I made
     'restaurant',
+    # pip installed module : djangorestframework
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
