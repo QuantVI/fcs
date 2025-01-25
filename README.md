@@ -109,11 +109,11 @@ In the IBM&trade; certificate path, your app with have this architecture:
 
 
 ```
-(workspace) C:\workspace>django-admin startproject demoproject . 
-(workspace) C:\workspace>cd demoproject 
-(workspace) C:\workspace>django-admin startapp demoapp 
-(workspace) C:\workspace>cd.. 
-(workspace) C:\workspace>python manage.py migrate 
-(workspace) C:\workspace>python manage.py createsuperuser 
-(workspace) C:\workspace>python manage.py runserver 
+(workspace) C:\workspace>django-admin startproject demoproject .
+(workspace) C:\workspace>cd demoproject
+(workspace) C:\workspace>django-admin startapp demoapp
+(workspace) C:\workspace>cd..
+(workspace) C:\workspace>python manage.py migrate
+(workspace) C:\workspace>python manage.py createsuperuser
+(workspace) C:\workspace>python manage.py runserver
 ```
