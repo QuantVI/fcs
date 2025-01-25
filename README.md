@@ -117,4 +117,3 @@ In the IBM&trade; certificate path, your app with have this architecture:
 (workspace) C:\workspace>python manage.py createsuperuser 
 (workspace) C:\workspace>python manage.py runserver 
 ```
-
