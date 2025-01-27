@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     # app I made
     'restaurant',
     # pip installed module : djangorestframework
-    'rest_framework'
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
