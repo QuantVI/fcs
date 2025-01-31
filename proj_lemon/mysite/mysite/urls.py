@@ -16,6 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.urls import include
+
 urlpatterns = [
+    path("polls/", include('polls.urls')),
     path("admin/", admin.site.urls),
 ]
+
+
+# This is considered the "root" URLconf.
+# Othe rurl configurations, meaning other urls.py file inside
+# of the sub-related apps, should ppint to this one.
+# We do this, by "importing" thos eother urls.py file here.
+# BY impor, we mean that we add the path to the other urls.py files
+# to the URLPATTERNS variable.
