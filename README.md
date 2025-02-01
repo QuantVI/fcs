@@ -57,7 +57,7 @@ In the IBM&trade; certificate path, your app with have this architecture:
 - anEnv : folder made by using this name for virtual env : `python -m venv anEnv`
   - bin, include, lib, lib64, pyenv.cfg : folders and config file inside __anEnv__ when it's created
 - after activating `anEnv` you run pip
-- `pip install django` : wil put Djano 5.1.4 (or latest) into your lib64/python3.12/site-packages folder
+- `pip install django` : will put Django 5.1.4 (or latest) into your lib64/python3.12/site-packages folder (4.1.2 used in)
   - asfiref 3.8.1 and sqlparse 0.5.3 are also installed
   - They show up with `Django==5.1.4` when you run `pip freeze`
   - You can also use django.__version__ inside python repl to see django version
@@ -117,3 +117,5 @@ In the IBM&trade; certificate path, your app with have this architecture:
 (workspace) C:\workspace>python manage.py createsuperuser
 (workspace) C:\workspace>python manage.py runserver
 ```
+
+https://docs.djangoproject.com/en/4.1/intro/tutorial01/
