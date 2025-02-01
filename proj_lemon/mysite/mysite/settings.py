@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "polls.apps.PollsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -38,6 +39,32 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
+
+NOTE_1 = """
+    These (first 6) applications (in INSTALLED_APPS) are included by default 
+    as a convenience for the common case.
+
+    Some of these applications make use of at least one database table, though, 
+    so we need to create the tables in the database before we can use them. 
+    To do that, run the following command:
+
+        $ python manage.py migrate
+"""
+
+NOTE_2 = """
+To include the app in our project, we need to add a reference to 
+its configuration class in the INSTALLED_APPS setting. 
+
+The PollsConfig class is in the polls/apps.py file, 
+so its dotted path is 'polls.apps.PollsConfig'. 
+
+Edit the mysite/settings.py file 
+and add that dotted path to the INSTALLED_APPS setting.
+
+Then since we define two model 'classes' inside of
+polls/models.py (aka polls.models) use this command
+    $ python manage.py makemigrations polls
+"""
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
