@@ -6,7 +6,8 @@ require(urca) #Used for the ADF Test
 require(PerformanceAnalytics)
 
 ##Change this to match where you stored the csv files folder name FullList
-setwd("~/R/QuantInsti-Final-Project-Statistical-Arbitrage/database/FullList")
+# setwd("~/R/QuantInsti-Final-Project-Statistical-Arbitrage/database/FullList")
+setwd("../database/FullList")
 
 ########################################################################################
 ##                                    Functions                                       ##
